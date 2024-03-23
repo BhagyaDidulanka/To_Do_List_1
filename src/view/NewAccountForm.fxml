@@ -51,5 +51,6 @@
       </Label>
       <Button layoutX="209.0" layoutY="99.0" mnemonicParsing="false" onAction="#btnAddNewUserOnAction" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: #045bbf;" text="+Add New User" textFill="WHITE" />
       <Button layoutX="92.0" layoutY="474.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: #2b942d;" text="Back" textFill="WHITE" />
+      <Label fx:id="lblID" layoutX="253.0" layoutY="133.0" prefHeight="18.0" prefWidth="78.0" text="UserID" />
    </children>
 </AnchorPane>
