@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="525.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NewAccountFormController">
+<AnchorPane fx:id="root" prefHeight="525.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NewAccountFormController">
    <children>
       <Label layoutX="101.0" layoutY="37.0" prefHeight="18.0" prefWidth="177.0" text="Create New Account" underline="true">
          <font>
