@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -30,13 +31,23 @@
             <Font size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="59.0" layoutY="249.0" prefHeight="26.0" prefWidth="214.0" style="-fx-border-color: #000000;" />
       <Label layoutX="67.0" layoutY="287.0" prefHeight="22.0" prefWidth="122.0" text="Conform Password">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="59.0" layoutY="309.0" prefHeight="26.0" prefWidth="214.0" style="-fx-border-color: #000000;" />
       <Button layoutX="79.0" layoutY="376.0" mnemonicParsing="false" onAction="#btnRegisterOnAction" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: #2b942d;" text="Register" textFill="WHITE" />
+      <PasswordField fx:id="txtNewPassword" layoutX="59.0" layoutY="250.0" prefHeight="27.0" prefWidth="214.0" style="-fx-border-color: #000000;" />
+      <PasswordField fx:id="txtConformPassword" layoutX="57.0" layoutY="309.0" prefHeight="27.0" prefWidth="214.0" style="-fx-border-color: #000000;" />
+      <Label fx:id="lblPasswordNotMatch_1" layoutX="184.0" layoutY="278.0" prefHeight="18.0" prefWidth="146.0" text="Password not matched.." textFill="#d10d0d">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPasswordNotMatched_2" layoutX="184.0" layoutY="336.0" prefHeight="18.0" prefWidth="146.0" text="Password not matched.." textFill="#d10d0d">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
