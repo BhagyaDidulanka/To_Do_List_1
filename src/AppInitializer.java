@@ -2,6 +2,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -20,6 +21,9 @@ public class AppInitializer extends Application {
         primaryStage.setScene(scene);
         primaryStage.setTitle("Login Page");
         primaryStage.centerOnScreen();
+
+        Image Img=new Image("img/images.jpg");
+        primaryStage.getIcons().add(Img);
         primaryStage.show();
     }
 }
