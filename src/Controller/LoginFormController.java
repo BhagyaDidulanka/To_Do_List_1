@@ -19,6 +19,13 @@ public class LoginFormController {
 
     public void btnLoginOnAction(ActionEvent actionEvent) throws IOException {
 
+        Parent parent= FXMLLoader.load(this.getClass().getResource("../view/ToDoListForm.fxml"));
+        Scene scene=new Scene(parent);
+
+        Stage stage=(Stage) root.getScene().getWindow();
+        stage.setScene(scene);
+        stage.centerOnScreen();
+        stage.show();
 
     }
 }
