@@ -1,5 +1,7 @@
 package Controller;
 
+import db.DBConnection;
+import db.DBConnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,6 +14,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.Connection;
 
 public class NewAccountFormController {
 
@@ -66,6 +69,11 @@ public class NewAccountFormController {
 
         setDisable(false);
         txtUserName.requestFocus();
+
+        DBConnection object = DBConnection.getInstance();
+
+        Connection connection = object.getConnection();
+        System.out.println(connection);
     }
 
     public void setDisable(boolean value_1){
