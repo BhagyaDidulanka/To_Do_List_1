@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="458.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ToDoListFormController">
+<AnchorPane fx:id="root" prefHeight="485.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ToDoListFormController">
    <children>
-      <ListView layoutX="7.0" layoutY="15.0" prefHeight="421.0" prefWidth="269.0" />
+      <ListView layoutX="14.0" layoutY="32.0" prefHeight="421.0" prefWidth="269.0" />
       <TextField layoutX="304.0" layoutY="55.0" prefHeight="26.0" prefWidth="370.0" style="-fx-border-color: #000000;" />
       <Label fx:id="msgWelcome" layoutX="298.0" layoutY="6.0" prefHeight="18.0" prefWidth="215.0" textFill="#4b4848">
          <font>
@@ -36,5 +36,6 @@
          </image>
       </ImageView>
       <Label fx:id="srId" layoutX="608.0" layoutY="5.0" prefHeight="18.0" prefWidth="44.0" />
+      <Button layoutX="529.0" layoutY="410.0" mnemonicParsing="false" onAction="#btnBackOnAction" style="-fx-background-color: #32b42f; -fx-border-color: #000000;" text="Back" />
    </children>
 </AnchorPane>

@@ -1,11 +1,17 @@
 package Controller;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class NewAccountFormController {
 
@@ -74,5 +80,16 @@ public class NewAccountFormController {
         txtConformPassword.setDisable(value_1);
         lblPasswordNotMatched_2.setDisable(value_1);
         btnRegister.setDisable(value_1);
+    }
+
+    public void btnBackOnAction(ActionEvent actionEvent) throws IOException {
+        Parent parent= FXMLLoader.load(this.getClass().getResource("../view/LoginForm.fxml"));
+        Scene scene=new Scene(parent);
+
+        Stage stage=(Stage) root.getScene().getWindow();
+        stage.setScene(scene);
+        stage.setTitle("Login Page");
+        stage.centerOnScreen();
+        stage.show();
     }
 }
